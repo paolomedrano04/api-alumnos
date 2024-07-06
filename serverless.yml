@@ -1,11 +1,11 @@
-org: bihoepiro
+org: loloorg
 service: api-alumnos
 
 provider:
   name: aws
   runtime: python3.12
   iam:
-    role: arn:aws:iam::578904630584:role/LabRole
+    role: arn:aws:iam::497369662727:role/LabRole
 
 functions:
   listar:
@@ -16,6 +16,9 @@ functions:
           method: post
           cors: true
           integration: lambda
+
+
+
 
 
 
